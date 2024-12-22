@@ -7,10 +7,12 @@ import Signup from './auth/forms/Signup'
 import About from './pages/about'
 import Dashboard from './pages/dashboard'
 import NewsArticles from './pages/NewsArticles'
+import Header from './components/shared/Header'
 
 const App = () => {
   return (
     <BrowserRouter>
+    <Header />
     <Routes>
       <Route path="/sign-in" element={<Signin/>} />
       <Route path="/sign-up" element={<Signup/>} />
